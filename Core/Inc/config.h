@@ -13,11 +13,11 @@
 #define DISPLAY_TYPE_M365DASHBOARD (1<<1)
 #define DISPLAY_TYPE_DEBUG (1<<0)							// For ASCII-Output in Debug mode);
 
-#define TRIGGER_OFFSET_ADC 50
+#define TRIGGER_OFFSET_ADC 300
 #define TRIGGER_DEFAULT 2020
 #define _T 2028
 
-#define SPEEDFILTER 3
+#define SPEEDFILTER 1
 
 //#define ADCTHROTTLE
 //#define FAST_LOOP_LOG
@@ -57,7 +57,7 @@
 #define PH_CURRENT_MAX_SPORT 55000
 
 // motor current limit for regen in mA
-#define REGEN_CURRENT 25000
+#define REGEN_CURRENT 11000
 
 // maximum current for flux weakening in mA
 #define FW_CURRENT_MAX 18000 //max id
@@ -75,7 +75,7 @@
 #define REVERSE 1 //1 for original M365 motor
 
 // settings for speed PLL (angle estimation)
-#define SPEED_PLL 1 //1 for using PLL, 0 for angle extrapolation
+#define SPEED_PLL 0 //1 for using PLL, 0 for angle extrapolation
 #define P_FACTOR_PLL 7 //7 for original M365 motor
 #define I_FACTOR_PLL 7 //7 for original M365 motor
 
